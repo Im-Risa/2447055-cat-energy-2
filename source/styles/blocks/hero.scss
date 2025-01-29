@@ -3,18 +3,18 @@
 }
 
 .hero__title {
-  @include font("Oswald", 400, 36px, 1);
+  @include font($secondary-font, 400, 36px, 1);
   color: $light-base-color;
 }
 
 .hero__slogan {
-  @include font("Oswald", 400, 14px, 1);
+  @include font($secondary-font, 400, 14px, 1);
   color: $light-base-color;
   text-transform: uppercase;
 }
 
 .hero__link {
-  @include font("Oswald", 400, 16px, 1.25);
+  @include font($secondary-font, 400, 16px, 1.25);
   width: 280px;
   height: 40px;
   padding: 10px 44px;
