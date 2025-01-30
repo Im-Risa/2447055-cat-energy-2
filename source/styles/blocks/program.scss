@@ -1,5 +1,26 @@
 .program__item {
   background-color: $bg-primary-color;
+  position: relative;
+}
+
+.program__item::before {
+  @include pseudo(50px, 50px);
+  border-radius: 50%;
+  background-color: $bg-accent-color;
+}
+
+.program__item--slim::after {
+  @include pseudo(36px, 50px);
+  @include program-icon(url("../../icons/black-cat-slim.svg"), 36px 50px);
+  top: -3px;
+  left: 7px;
+}
+
+.program__item--pro::after {
+  @include pseudo(67px, 28px);
+  @include program-icon(url("../../icons/black-cat-pro.svg"), 67px 28px);
+  top: 11px;
+  left: -9px;
 }
 
 .program__title {

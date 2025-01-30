@@ -28,3 +28,17 @@
   width: $width;
   height: $height;
 }
+
+@mixin program-icon($url, $bg-size) {
+  background-image: $url;
+  background-repeat: no-repeat;
+  background-size: $bg-size;
+  position: absolute;
+}
+
+@mixin instruction-icon($url) {
+  background-image: $url;
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}

@@ -16,8 +16,16 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo link-reset" href="index.html">
-      <img class="logo__image" src="#" width="33" height="38" alt="Логотип Cat Energy картинкой">
-      <img class="logo__text" src="#" width="101" height="18" alt="Логотип Cat Energy текстом">
+      <picture>
+        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/vector/logo-cat-desktop.svg">
+        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/vector/logo-cat-tablet.svg">
+        <img class="logo__image" src="images/vector/logo-cat-mobile.svg" width="33" height="38" alt="Логотип Cat Energy картинкой">
+      </picture>
+      <picture>
+        <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/vector/logo-text-tablet.svg">
+        <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/vector/logo-text-tablet.svg">
+        <img class="logo__text" src="images/vector/logo-text-mobile.svg" width="101" height="18" alt="Логотип Cat Energy текстом">
+      </picture>
     </a>
     <nav class="main-header__nav main-nav">
       <button class="main-nav__toggle" type="button">
@@ -258,7 +266,7 @@
   </main>
   <footer class="main-footer">
     <a class="main-footer__logo logo link-reset" href="index.html">
-      <img class="logo__text" src="#" width="128" height="24" alt="Логотип Cat Energy">
+      <img class="logo__text" src="images/vector/footer-logo-text.svg" width="128" height="24" alt="Логотип Cat Energy">
     </a>
     <ul class="main-footer__list social list-reset">
       <li class="social__item">
@@ -279,7 +287,7 @@
     </ul>
     <a class="main-footer__developer developer link-reset" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="developer__name">HTML Academy</span>
-      <img class="developer__logo" src="#" width="27" height="34" alt="Логотип HTML Academy">
+      <img class="developer__logo" src="images/vector/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
     </a>
   </footer>
 </body>

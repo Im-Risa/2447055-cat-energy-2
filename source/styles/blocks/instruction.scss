@@ -5,4 +5,26 @@
 .instruction__item {
   @include font($primary-font, 400, 14px, 1.29);
   color: $primary-text-color;
+  position: relative;
+}
+
+.instruction__item::before {
+  @include pseudo(60px, 60px);
+  background-color: $bg-accent-color;
+}
+
+.instruction__item--leaf::before {
+  @include instruction-icon(url("../../icons/icon-leaf.svg"));
+}
+
+.instruction__item--water::before {
+  @include instruction-icon(url("../../icons/icon-water.svg"));
+}
+
+.instruction__item--eat::before {
+  @include instruction-icon(url("../../icons/icon-eat.svg"));
+}
+
+.instruction__item--time::before {
+  @include instruction-icon(url("../../icons/icon-time.svg"));
 }
