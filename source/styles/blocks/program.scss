@@ -11,14 +11,16 @@
 
 .program__item--slim::after {
   @include pseudo(36px, 50px);
-  @include program-icon(url("../../icons/black-cat-slim.svg"), 36px 50px);
+  @include icon(url("../../icons/black-cat-slim.svg"), 36px 50px);
+  position: absolute;
   top: -3px;
   left: 7px;
 }
 
 .program__item--pro::after {
   @include pseudo(67px, 28px);
-  @include program-icon(url("../../icons/black-cat-pro.svg"), 67px 28px);
+  @include icon(url("../../icons/black-cat-pro.svg"), 67px 28px);
+  position: absolute;
   top: 11px;
   left: -9px;
 }

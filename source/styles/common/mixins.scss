@@ -29,16 +29,8 @@
   height: $height;
 }
 
-@mixin program-icon($url, $bg-size) {
+@mixin icon($url, $bg-size: 100% 100%) {
   background-image: $url;
   background-repeat: no-repeat;
   background-size: $bg-size;
-  position: absolute;
-}
-
-@mixin instruction-icon($url) {
-  background-image: $url;
-  background-size: 30px 32px;
-  background-repeat: no-repeat;
-  background-position: 50%;
 }
