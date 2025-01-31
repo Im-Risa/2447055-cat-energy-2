@@ -1,5 +1,7 @@
 .hero {
-  background-image: linear-gradient(180deg, $bg-accent-color 35%, $light-base-color 35%);
+  background-image: linear-gradient(180deg, rgba($bg-accent-color, 0.83) 60%, $light-base-color 60%), url("../../images/hero/hero-cat-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 320px 100%, 320px 302px;
 }
 
 .hero__title {

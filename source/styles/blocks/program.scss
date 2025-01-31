@@ -11,7 +11,7 @@
 
 .program__item--slim::after {
   @include pseudo(36px, 50px);
-  @include icon(url("../../icons/black-cat-slim.svg"), 36px 50px);
+  @include icon(url("../../icons/stack.svg#black-cat-slim"), 36px 50px);
   position: absolute;
   top: -3px;
   left: 7px;
@@ -19,7 +19,7 @@
 
 .program__item--pro::after {
   @include pseudo(67px, 28px);
-  @include icon(url("../../icons/black-cat-pro.svg"), 67px 28px);
+  @include icon(url("../../icons/stack.svg#black-cat-pro"), 67px 28px);
   position: absolute;
   top: 11px;
   left: -9px;
@@ -39,4 +39,13 @@
   @include font($secondary-font, 400, 16px, 1);
   text-transform: uppercase;
   color: $dark-base-color;
+  position: relative;
+}
+
+.program__link::after {
+  @include pseudo(32px, 10px);
+  background-image: url("../../icons/stack.svg#icon-arrow");
+  position: absolute;
+  top: 30%;
+  left: 110%;
 }

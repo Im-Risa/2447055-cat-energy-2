@@ -14,17 +14,17 @@
 }
 
 .instruction__item--leaf::before {
-  @include icon(url("../../icons/icon-leaf.svg"), 30px 32px);
+  @include icon(url("../../icons/stack.svg#icon-leaf"), 30px 32px);
 }
 
 .instruction__item--water::before {
-  @include icon(url("../../icons/icon-water.svg"), 30px 32px);
+  @include icon(url("../../icons/stack.svg#icon-water"), 30px 32px);
 }
 
 .instruction__item--eat::before {
-  @include icon(url("../../icons/icon-eat.svg"), 30px 32px);
+  @include icon(url("../../icons/stack.svg#icon-eat"), 30px 32px);
 }
 
 .instruction__item--time::before {
-  @include icon(url("../../icons/icon-time.svg"), 30px 32px);
+  @include icon(url("../../icons/stack.svg#icon-time"), 30px 32px);
 }
