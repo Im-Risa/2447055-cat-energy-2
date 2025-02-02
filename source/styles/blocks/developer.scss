@@ -1,3 +1,7 @@
+.developer {
+  display: flex;
+}
+
 .developer__name {
   @include font($primary-font, 400, 16px, 1.25);
   color: $primary-text-color;

@@ -1,3 +1,7 @@
+.social__item {
+  position: relative;
+}
+
 .social__link {
   width: 30px;
   height: 30px;
@@ -10,12 +14,15 @@
 
 .social__link--vkontakte {
   mask-image: url("../../icons/stack.svg#vkontakte");
+  left: 10px;
 }
 
 .social__link--youtube {
   mask-image: url("../../icons/stack.svg#youtube");
+  left: 45px;
 }
 
 .social__link--telegram {
   mask-image: url("../../icons/stack.svg#telegram");
+  left: 80px;
 }

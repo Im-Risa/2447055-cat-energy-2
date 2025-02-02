@@ -1,3 +1,11 @@
+.program__list {
+  display: grid;
+
+  @media (min-width: 1440px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .program__item {
   background-color: $bg-primary-color;
   position: relative;
@@ -46,6 +54,6 @@
   @include pseudo(32px, 10px);
   background-image: url("../../icons/stack.svg#icon-arrow");
   position: absolute;
-  top: 30%;
-  left: 110%;
+  top: 4px;
+  left: 100px;
 }

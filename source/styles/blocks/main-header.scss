@@ -1,5 +1,10 @@
-.main-nav__link {
-  @include font($secondary-font, 400, 20px, 1);
-  color: $dark-base-color;
-  text-transform: uppercase;
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }

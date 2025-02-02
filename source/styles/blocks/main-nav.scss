@@ -1,0 +1,24 @@
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.main-nav__link {
+  @include font($secondary-font, 400, 20px, 1);
+  color: $dark-base-color;
+  text-transform: uppercase;
+}

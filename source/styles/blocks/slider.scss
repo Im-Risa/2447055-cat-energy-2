@@ -10,6 +10,8 @@
   background-color: $light-base-color;
   border-radius: 20px;
   position: absolute;
+  top: 40%;
+  left: 45%;
 }
 
 .slider__toggle::before {
@@ -26,6 +28,10 @@
   background-color: #666666;
   border-radius: 2px;
   position: absolute;
-  top: -100px;
-  left: 44%;
+  top: -102px;
+  left: 43%;
+}
+
+.slider__slim {
+  display: none;
 }

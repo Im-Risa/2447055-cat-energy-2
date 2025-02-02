@@ -2,13 +2,31 @@
   @include font($secondary-font, 400, 36px, 1.11);
 }
 
+.instruction__list {
+  display: grid;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .instruction__item {
   @include font($primary-font, 400, 14px, 1.29);
   color: $primary-text-color;
+  display: flex;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .instruction__item::before {
   @include pseudo(60px, 60px);
+  min-width: 60px;
   background-color: $bg-accent-color;
   background-position: 50%;
 }
