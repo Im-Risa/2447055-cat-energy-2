@@ -1,8 +1,8 @@
 .button {
   @include font($secondary-font, 400, 16px, 1.25);
-  padding: 6px 109px;
-  width: 280px;
+  padding: 10px;
   height: 40px;
+  text-align: center;
   text-transform: uppercase;
   color: $light-base-color;
   background-color: $bg-accent-color;
@@ -10,7 +10,6 @@
 }
 
 .button--more {
-  padding: 6px 94px;
   color: $primary-text-color;
   background-color: $bg-primary-color;
 }

@@ -1,14 +1,14 @@
 .result {
+  padding: 0 20px 40px;
   display: flex;
   flex-direction: column;
   background-color: $bg-secondary-color;
-  padding: 25px auto;
 
   @media (min-width: 768px) {
     background-image: linear-gradient(180deg, $light-base-color 60%, $bg-secondary-color 60%);
   }
 
-  @media (min-width: 1440) {
+  @media (min-width: 1440px) {
     align-items: flex-start;
   }
 }

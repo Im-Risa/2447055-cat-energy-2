@@ -1,16 +1,31 @@
+.instruction {
+  background-color: $light-base-color;
+  padding: 0 20px 49px;
+
+  @media (min-width: 768px) {
+    padding: 0 30px 47px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 110px 69px;
+  }
+}
+
 .instruction__title {
   @include font($secondary-font, 400, 36px, 1.11);
 }
 
 .instruction__list {
   display: grid;
+  grid-template-columns: 280px;
+  justify-content: space-between;
 
   @media (min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 247px 250px;
   }
 
   @media (min-width: 1440px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 247px 250px 247px 250px;
   }
 }
 
@@ -24,11 +39,20 @@
   }
 }
 
+.instruction__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .instruction__item::before {
   @include pseudo(60px, 60px);
   min-width: 60px;
   background-color: $bg-accent-color;
   background-position: 50%;
+  margin-right: 20px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 31px;
+  }
 }
 
 .instruction__item--leaf::before {

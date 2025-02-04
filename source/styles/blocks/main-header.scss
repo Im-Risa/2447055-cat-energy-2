@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  background-color: $light-base-color;
 
   @media (min-width: 768px) {
     flex-direction: row;

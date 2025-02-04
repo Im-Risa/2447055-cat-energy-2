@@ -1,6 +1,12 @@
 .main-footer {
+  padding: 20px;
   background-color: $bg-primary-color;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

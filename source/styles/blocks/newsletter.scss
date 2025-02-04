@@ -1,7 +1,34 @@
+.newsletter {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .newsletter__title {
   @include font($secondary-font, 400, 24px, 1);
+  align-self: flex-start;
 }
 
 .newsletter__text {
   @include font($secondary-font, 400, 16px, 1.5);
+  text-align: center;
+}
+
+.newsletter__field {
+  width: 280px;
+  height: 40px;
+
+  @media (min-width: 768px) {
+    width: 376px;
+  }
+}
+
+.button--news {
+  width: 280px;
+  padding: 15px;
+
+  @media (min-width: 768px) {
+    width: 256px;
+  }
 }
