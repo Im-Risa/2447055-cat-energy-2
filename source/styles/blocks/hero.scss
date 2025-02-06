@@ -12,7 +12,7 @@
     background-image: none;
     color: $dark-base-color;
     text-align: left;
-    padding: 27px 20px 0;
+    padding: 65px 120px 0;
   }
 
   @media (min-width: 1440px) {
@@ -26,6 +26,7 @@
 
   @media (min-width: 768px) {
     font-size: 60px;
+    margin-bottom: 40px;
   }
 }
 
@@ -34,14 +35,39 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+.hero__image-product {
+  @media (min-width: 768px) {
+    order: 1;
+    position: relative;
+    z-index: 0;
+    top: -80px;
+    left: -90px;
+  }
 }
 
 .hero__link {
   @include font($secondary-font, 400, 16px, 1.25);
   width: 280px;
   height: 40px;
-  padding: 10px 44px;
+  padding: 10px;
   background-color: $bg-accent-color;
   color: $light-base-color;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    width: 242px;
+    height: 54px;
+    padding: 14px;
+    font-size: 20px;
+    line-height: 1.3;
+    z-index: 1;
+  }
 }
