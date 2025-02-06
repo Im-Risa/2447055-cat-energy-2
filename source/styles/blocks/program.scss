@@ -22,6 +22,11 @@
 .program__item {
   background-color: $bg-primary-color;
   position: relative;
+  padding: 30px 33px 18px 20px;
+
+  @media (min-width: 768px) {
+    padding: 77px 52px 53px;
+  }
 }
 
 .program__item:not(:last-child) {
@@ -36,13 +41,19 @@
   @include pseudo(50px, 50px);
   border-radius: 50%;
   background-color: $bg-accent-color;
+  position: absolute;
+  top: 25px;
 
   @media (min-width: 768px) {
-    @include pseudo(200px, 200px);
+    width: 200px;
+    height: 200px;
+    top: 20%;
+    right: 60px;
   }
 
   @media (min-width: 1440px) {
-    @include pseudo(100px, 100px);
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -50,13 +61,15 @@
   @include pseudo(36px, 50px);
   @include icon(url("../../icons/stack.svg#black-cat-slim"), 36px 50px);
   position: absolute;
-  top: -3px;
-  left: 7px;
+  top: 22px;
+  left: 27px;
 
   @media (min-width: 768px) {
     width: 140px;
     height: 194px;
     background-size: 140px 194px;
+    top: 55px;
+    left: 480px;
   }
 
   @media (min-width: 1440px) {
@@ -70,13 +83,15 @@
   @include pseudo(67px, 28px);
   @include icon(url("../../icons/stack.svg#black-cat-pro"), 67px 28px);
   position: absolute;
-  top: 11px;
-  left: -9px;
+  top: 38px;
+  left: 12px;
 
   @media (min-width: 768px) {
     width: 268px;
     height: 112px;
     background-size: 268px 112px;
+    top: 114px;
+    left: 419px;
   }
 
   @media (min-width: 1440px) {
@@ -89,11 +104,30 @@
 .program__title {
   @include font($secondary-font, 400, 24px, 1.54);
   text-transform: uppercase;
+  margin-bottom: 29px;
+  display: block;
+  padding-left: 65px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 1;
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
 }
 
 .program__description {
   @include font($primary-font, 400, 14px, 1.29);
   color: $primary-text-color;
+  margin-bottom: 38px;
+
+  @media (min-width: 768px) {
+    color: $dark-base-color;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 340px;
+    margin-bottom: 48px;
+  }
 }
 
 .program__link {
@@ -101,7 +135,15 @@
   text-transform: uppercase;
   color: $dark-base-color;
   position: relative;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
 }
+
+// .program__link::before {
+
+// }
 
 .program__link::after {
   @include pseudo(32px, 10px);
@@ -109,4 +151,9 @@
   position: absolute;
   top: 4px;
   left: 100px;
+
+  @media (min-width: 768px) {
+    top: 10px;
+    left: 130px;
+  }
 }

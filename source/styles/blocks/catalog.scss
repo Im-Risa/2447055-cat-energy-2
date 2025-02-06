@@ -18,4 +18,5 @@
 .catalog__title {
   @include font($secondary-font, 400, 36px, 1);
   color: $dark-base-color;
+  margin: 0;
 }
