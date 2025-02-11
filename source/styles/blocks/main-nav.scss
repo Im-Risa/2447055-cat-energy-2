@@ -5,16 +5,32 @@
   align-items: center;
 
   @media (min-width: 768px) {
+    width: auto;
     flex-direction: row;
+    justify-content: flex-end;
   }
 }
 
 .main-nav__item {
   padding: 22px 5px 24px;
+
+  @media (min-width: 768px) {
+    margin-left: 33px;
+  }
 }
 
 .main-nav__link {
   @include font($secondary-font, 400, 20px, 1);
   color: $dark-base-color;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    // color: $light-base-color;
+  }
 }

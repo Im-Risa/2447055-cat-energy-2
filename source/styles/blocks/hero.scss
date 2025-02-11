@@ -16,7 +16,10 @@
   }
 
   @media (min-width: 1440px) {
-    background-image: linear-gradient(-90deg, rgba($bg-accent-color, 0.83) 60%, $light-base-color 60%), url("../../images/hero/hero-cat-desktop@1x.png");
+    background-image: linear-gradient(-90deg, rgba($bg-accent-color, 0.85) 720px, $light-base-color 720px), url("../../images/hero/hero-cat-desktop@1x.png");
+    background-position: 0, 550px 0;
+    background-size: contain;
+    padding: 110px 0 0 190px;
   }
 }
 
@@ -40,6 +43,10 @@
     font-size: 20px;
     margin-bottom: 50px;
   }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 52px;
+  }
 }
 
 .hero__image-product {
@@ -49,6 +56,11 @@
     z-index: 0;
     top: -80px;
     left: -90px;
+  }
+
+  @media (min-width: 1440px) {
+    top: -330px;
+    left: 370px;
   }
 }
 

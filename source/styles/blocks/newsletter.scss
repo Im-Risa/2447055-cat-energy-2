@@ -1,5 +1,5 @@
 .newsletter {
-  padding: 40px 20px;
+  padding: 0 20px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,27 +8,38 @@
 .newsletter__title {
   @include font($secondary-font, 400, 24px, 1);
   align-self: flex-start;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+    margin-left: 40px;
+    margin-bottom: 55px;
+  }
 }
 
 .newsletter__text {
   @include font($secondary-font, 400, 16px, 1.5);
   text-align: center;
-}
-
-.newsletter__field {
-  width: 280px;
-  height: 40px;
 
   @media (min-width: 768px) {
-    width: 376px;
+    font-size: 24px;
+    line-height: 1.33;
+    width: 600px;
+    margin: 0;
+    margin-bottom: 24px;
   }
 }
 
-.button--news {
+.newsletter__field {
+  @include font($secondary-font, 400, 20px, 1);
   width: 280px;
-  padding: 15px;
+  padding: 10px;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  margin-bottom: 16px;
 
   @media (min-width: 768px) {
-    width: 256px;
+    width: 376px;
+    padding: 8px;
+    margin-bottom: 30px;
   }
 }

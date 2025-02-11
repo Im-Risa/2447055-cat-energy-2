@@ -4,17 +4,15 @@
 
   @media (max-width: 767px) {
     grid-template-columns: repeat(2, 140px);
-    grid-template-rows: repeat(3, 55px);
-    row-gap: 14px;
-    grid-template-areas: ". title" ". desc" "button button";
+    grid-template-areas: "img title" "img desc" "button button";
   }
 
   @media (min-width: 768px) {
     grid-template-columns: 250px;
-    row-gap: 20px;
     justify-items: center;
-    padding: 40px 37px;
-    background-image: linear-gradient(0deg, $bg-primary-color 80%, transparent 80%);
+    padding: 10px 37px 40px;
+    background-image: linear-gradient(180deg, transparent 85px, $bg-primary-color 85px);
+    margin-bottom: 60px;
   }
 
   @media (min-width: 1440px) {
@@ -23,60 +21,86 @@
 }
 
 .card--more {
-  background-color: $light-base-color;
-  background-image: none;
-  outline: solid 1px $bg-primary-color;
+  @media (max-width: 767px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $light-base-color;
+    background-image: none;
+    outline: solid 1px $bg-primary-color;
+  }
 }
 
-// .card__image {
-//   width: 140px;
-//   height: 107px;
+.card__image {
+  place-self: center center;
 
-//   @media (min-width: 768px) {
-//     width: 200px;
-//     height: 210px;
-//   }
+  @media (max-width: 767px) {
+    grid-area: img;
+  }
 
-//   @media (min-width: 1440px) {
-//     width: 169;
-//     height: 210px;
-//   }
-// }
+  @media (min-width: 768px) {
+    height: 210px;
+    object-fit: none;
+  }
+}
 
 .card__title {
   @include font($secondary-font, 400, 16px, 1.25);
   text-transform: uppercase;
   color: $secondary-text-color;
+  width: 80px;
+  margin-bottom: 14px;
 
   @media (max-width: 767px) {
     grid-area: title;
   }
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    width: 135px;
+    margin-bottom: 20px;
+  }
 }
 
 .card__title--more {
+  width: 219px;
   color: #111111;
+  margin-bottom: 8px;
 }
 
 .card__desc {
   @include font($primary-font, 400, 12px, 1.33);
   color: $primary-text-color;
   justify-self: stretch;
+  margin-bottom: 21px;
 
   @media (max-width: 767px) {
     grid-area: desc;
   }
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 37px;
+  }
 }
 
 .card__char {
-  @include font($primary-font, 400, 12px, 1.33);
-  color: $primary-text-color;
   display: flex;
   justify-content: space-between;
 }
 
-.card__button {
-  justify-self: stretch;
+.card__char:not(:last-child) {
+  @media (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+}
 
+.card__button {
   @media (max-width: 767px) {
     grid-area: button;
   }
