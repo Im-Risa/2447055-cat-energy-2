@@ -23,7 +23,11 @@
 
   @media (min-width: 768px) {
     font-size: 60px;
-    padding: 0 30px;
+    padding: 55px 30px 0;
     margin-bottom: 84px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 60px 110px 0;
   }
 }

@@ -4,22 +4,39 @@
   @media (min-width: 768px) {
     padding: 0 30px 70px;
   }
+
+  @media (min-width: 1440px) {
+    padding: 0 111px 96px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .extra-product__title {
   @include font($secondary-font, 400, 24px, 1);
   color: $dark-base-color;
   margin-bottom: 36px;
+  width: 100%;
 
   @media (min-width: 768px) {
     font-size: 32px;
     margin-left: 40px;
     margin-bottom: 80px;
   }
+
+  @media (min-width: 1440px) {
+    font-size: 40px;
+    margin-left: 0;
+  }
 }
 
 .extra-product__list {
   margin-bottom: 35px;
+
+  @media (min-width: 1440px) {
+    width: 896px;
+  }
 }
 
 .extra-product__card {
@@ -31,6 +48,12 @@
     padding: 26px 38px 28px;
     flex-flow: row wrap;
     justify-content: space-between;
+  }
+
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: repeat(3, 244px);
+    padding: 17px 0;
   }
 }
 

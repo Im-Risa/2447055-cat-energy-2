@@ -12,6 +12,7 @@
   position: absolute;
   top: 0;
   left: 50%;
+  z-index: 1;
 }
 
 .slider__toggle::before {
@@ -41,6 +42,21 @@
   }
 }
 
+.slider__fat {
+  overflow-x: hidden;
+  width: 50%;
+}
+
 .slider__slim {
-  display: none;
+  overflow-x: hidden;
+  width: 50%;
+  transform: translate(102.8%, -100%);
+
+  @media (min-width: 768px) {
+    transform: translate(101.4%, -100%);
+  }
+}
+
+.slider__image--slim-cat {
+  transform: translateX(-50%);
 }

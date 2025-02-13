@@ -16,22 +16,40 @@
   }
 
   @media (min-width: 1440px) {
-    padding: 40px 38px;
+    padding: 0 38px 40px;
+    grid-template-columns: 169px;
   }
 }
 
 .card--more {
-  @media (max-width: 767px) {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: $light-base-color;
-    background-image: none;
-    outline: solid 1px $bg-primary-color;
+  background-color: $light-base-color;
+  background-image: none;
+  outline: solid 1px $bg-primary-color;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    width: 324px;
+    height: 400px;
+    justify-content: flex-end;
+    transform: translateY(85px);
+  }
+
+  @media (min-width: 1440px) {
+    width: 245px;
   }
 }
+
+// .card--more::before {
+//   @include pseudo(30px, 1px);
+// }
+
+// .card--more::after {
+//   @include pseudo(30px, 1px);
+// }
 
 .card__image {
   place-self: center center;
@@ -70,6 +88,11 @@
   width: 219px;
   color: #111111;
   margin-bottom: 8px;
+
+  @media (min-width: 768px) {
+    width: 150px;
+    margin-bottom: 23px;
+  }
 }
 
 .card__desc {
@@ -86,6 +109,14 @@
     font-size: 16px;
     line-height: 1.25;
     margin-bottom: 37px;
+  }
+}
+
+.card__desc--more {
+  @media (min-width: 768px) {
+    width: 170px;
+    margin: 0;
+    margin-bottom: 82px;
   }
 }
 

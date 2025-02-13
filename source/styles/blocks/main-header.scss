@@ -17,6 +17,15 @@
   }
 }
 
+.main-header--index {
+  @media (min-width: 1440px) {
+    position: absolute;
+    width: 1440px;
+    background-color: transparent;
+    color: $light-base-color;
+  }
+}
+
 .main-header__logo {
   display: flex;
   align-items: center;
