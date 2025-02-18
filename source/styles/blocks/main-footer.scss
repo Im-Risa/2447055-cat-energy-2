@@ -16,9 +16,18 @@
 }
 
 .main-footer__logo {
+  padding-top: 5px;
   margin-bottom: 20px;
 
   @media (min-width: 768px) {
     margin-bottom: 0;
   }
+}
+
+.main-footer__logo:hover {
+  opacity: 0.8;
+}
+
+.main-footer__logo:active {
+  opacity: 0.6;
 }

@@ -15,6 +15,14 @@
   background-color: $bg-primary-color;
 }
 
+.button--more:hover {
+  background-color: #ebebeb;
+}
+
+.button--more:active {
+  color: $primary-text-color;
+}
+
 .button--news {
   width: 280px;
   padding: 15px;

@@ -8,6 +8,15 @@
   }
 }
 
+.developer:hover .developer__name::after,
+.developer:focus .developer__name::after {
+  background-color: $bg-accent-color;
+}
+
+.developer:active {
+  opacity: 0.3;
+}
+
 .developer__name {
   @include font($primary-font, 400, 16px, 1.25);
   color: $primary-text-color;
@@ -19,5 +28,5 @@
 .developer__name::after {
   @include pseudo(27px, 34px);
   background-color: #666666;
-  mask-image: url("../../images/vector/logo-htmlacademy.svg");
+  mask-image: url("../../icons/stack.svg#logo-htmlacademy");
 }

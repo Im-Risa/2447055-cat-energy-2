@@ -15,7 +15,9 @@
 
 .newsletter__title {
   @include font($secondary-font, 400, 24px, 1);
+  width: 100%;
   align-self: flex-start;
+  position: relative;
 
   @media (min-width: 768px) {
     font-size: 32px;
@@ -24,6 +26,39 @@
 
   @media (min-width: 1440px) {
     font-size: 40px;
+  }
+}
+
+.newsletter__title::before {
+  @media (min-width: 768px) {
+    @include pseudo(30px, 2px);
+    background-color: $bg-accent-color;
+    position: absolute;
+    top: 50%;
+    left: -70px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 70px;
+    left: -110px;
+  }
+}
+
+.newsletter__title::after {
+  @include pseudo(108px, 2px);
+  background-color: $bg-accent-color;
+  position: absolute;
+  top: 50%;
+  right: -20px;
+
+  @media (min-width: 768px) {
+    width: 456px;
+    right: -70px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1045px;
+    right: -110px;
   }
 }
 

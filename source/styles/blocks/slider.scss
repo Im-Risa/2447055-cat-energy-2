@@ -15,6 +15,25 @@
   z-index: 1;
 }
 
+.slider__toggle:hover,
+.slider__toggle:focus {
+  background-color: $bg-accent-color;
+}
+
+.slider__toggle:hover.slider__toggle::before,
+.slider__toggle:focus.slider__toggle::before {
+  border-color: $bg-accent-color;
+}
+
+.slider__toggle:hover.slider__toggle::after,
+.slider__toggle:focus.slider__toggle::after {
+  background-color: $bg-accent-color;
+}
+
+.slider__toggle:active {
+  opacity: 0.6;
+}
+
 .slider__toggle::before {
   @include pseudo(40px, 40px);
   border: solid 2px #666666;

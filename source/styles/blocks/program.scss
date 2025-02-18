@@ -1,13 +1,16 @@
 .program {
+  width: 320px;
   background-color: $light-base-color;
   padding: 20px;
 
   @media (min-width: 768px) {
+    width: 768px;
     padding: 0 30px;
     margin-top: -80px;
   }
 
   @media (min-width: 1440px) {
+    width: 1440px;
     padding: 82px 110px 71px;
   }
 }
@@ -23,7 +26,7 @@
 .program__item {
   background-color: $bg-primary-color;
   position: relative;
-  padding: 30px 33px 18px 20px;
+  padding: 30px 20px 18px;
 
   @media (min-width: 768px) {
     padding: 77px 52px 53px;
@@ -139,7 +142,7 @@
 .program__description {
   @include font($primary-font, 400, 14px, 1.29);
   color: $primary-text-color;
-  margin-bottom: 38px;
+  margin-bottom: 23px;
 
   @media (min-width: 768px) {
     color: $dark-base-color;
@@ -151,7 +154,7 @@
 
   @media (min-width: 1440px) {
     width: 451px;
-    margin-bottom: 23px;
+    margin-bottom: 30px;
   }
 }
 
@@ -161,20 +164,43 @@
   color: $dark-base-color;
   position: relative;
 
+  @media (max-width: 767px) {
+    border-top: solid 1px #d9d9d9;
+    display: block;
+    padding-top: 15px;
+  }
+
   @media (min-width: 768px) {
     font-size: 20px;
   }
 }
 
-// .program__link::before {
+.program__link:hover.program__link::after {
+  transform: translateX(3px);
+}
 
-// }
+.program__link:active {
+  opacity: 0.3;
+}
+
+.program__link::before {
+  @include pseudo(10px, 2px);
+  background-color: $dark-base-color;
+  position: absolute;
+  top: 22px;
+  left: 100px;
+
+  @media (min-width: 768px) {
+    top: 14px;
+    left: 130px;
+  }
+}
 
 .program__link::after {
   @include pseudo(32px, 10px);
   background-image: url("../../icons/stack.svg#icon-arrow");
   position: absolute;
-  top: 4px;
+  top: 18px;
   left: 100px;
 
   @media (min-width: 768px) {

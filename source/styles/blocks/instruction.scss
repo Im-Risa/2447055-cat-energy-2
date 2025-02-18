@@ -1,12 +1,15 @@
 .instruction {
+  width: 320px;
   background-color: $light-base-color;
   padding: 0 20px 49px;
 
   @media (min-width: 768px) {
+    width: 768px;
     padding: 45px 30px 47px;
   }
 
   @media (min-width: 1440px) {
+    width: 1440px;
     padding: 0 110px 69px;
   }
 }

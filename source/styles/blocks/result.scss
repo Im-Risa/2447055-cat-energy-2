@@ -7,6 +7,7 @@
   @media (min-width: 768px) {
     padding: 45px 30px 101px;
     background-image: linear-gradient(180deg, $light-base-color 650px, $bg-secondary-color 650px);
+    border-top: solid 1px #e6e6e6;
   }
 
   @media (min-width: 1440px) {
@@ -14,6 +15,7 @@
     background-image: linear-gradient(180deg, $light-base-color 135px, $bg-secondary-color 135px);
     flex-direction: row;
     justify-content: space-between;
+    border: none;
   }
 }
 

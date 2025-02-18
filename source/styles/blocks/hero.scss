@@ -84,3 +84,12 @@
     z-index: 1;
   }
 }
+
+.hero__link:hover,
+.hero__link:focus {
+  background-color: #5eaa2f;
+}
+
+.hero__link:active {
+  color: rgba($light-base-color, 0.3);
+}

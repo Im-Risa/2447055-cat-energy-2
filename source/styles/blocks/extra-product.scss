@@ -18,6 +18,7 @@
   color: $dark-base-color;
   margin-bottom: 36px;
   width: 100%;
+  position: relative;
 
   @media (min-width: 768px) {
     font-size: 32px;
@@ -28,6 +29,39 @@
   @media (min-width: 1440px) {
     font-size: 40px;
     margin-left: 0;
+  }
+}
+
+.extra-product__title::before {
+  @media (min-width: 768px) {
+    @include pseudo(30px, 2px);
+    background-color: $bg-accent-color;
+    position: absolute;
+    top: 50%;
+    left: -70px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 70px;
+    left: -110px;
+  }
+}
+
+.extra-product__title::after {
+  @include pseudo(35px, 2px);
+  background-color: $bg-accent-color;
+  position: absolute;
+  top: 50%;
+  right: -20px;
+
+  @media (min-width: 768px) {
+    width: 358px;
+    right: 10px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 915px;
+    right: -111px;
   }
 }
 
@@ -43,18 +77,28 @@
   display: flex;
   flex-direction: column;
   padding: 13px 0 19px;
+  border-bottom: solid 1px #cdcdcd;
 
   @media (min-width: 768px) {
     padding: 26px 38px 28px;
     flex-flow: row wrap;
     justify-content: space-between;
+    border: solid 1px #cdcdcd;
+    border-top: none;
   }
 
   @media (min-width: 1440px) {
     display: grid;
-    grid-template-columns: repeat(3, 244px);
+    grid-template-columns: 285px 285px 244px;
+    align-items: center;
     padding: 17px 0;
+    border: none;
+    border-bottom: solid 1px #cdcdcd;
   }
+}
+
+.extra-product__card:first-child {
+  border-top: solid 1px #cdcdcd;
 }
 
 .extra-product__card-title {
@@ -67,6 +111,10 @@
     width: 300px;
     font-size: 20px;
   }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
 }
 
 .extra-product__card-char {
@@ -74,11 +122,22 @@
   color: $primary-text-color;
   display: flex;
   justify-content: space-between;
-  margin: 0 0 15px;
+  margin: 0;
+  margin-bottom: 15px;
 
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 1.25;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+}
+
+.extra-product__card-volume {
+  @media (min-width: 1440px) {
+    width: 165px;
   }
 }
 
@@ -86,4 +145,16 @@
   text-align: right;
   width: 80px;
   margin-left: 20px;
+
+  @media (min-width: 1440px) {
+    width: 100px;
+  }
+}
+
+.extra-product__button:hover {
+  background-color: #5eaa2f;
+}
+
+.extra-product__button:active {
+  color: rgba($light-base-color, 0.3);
 }
