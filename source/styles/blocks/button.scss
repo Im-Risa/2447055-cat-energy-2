@@ -15,8 +15,10 @@
   background-color: $bg-primary-color;
 }
 
-.button--more:hover {
+.button--more:hover,
+.button--more:focus {
   background-color: #ebebeb;
+  outline: none;
 }
 
 .button--more:active {
@@ -26,8 +28,19 @@
 .button--news {
   width: 280px;
   padding: 15px;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     width: 256px;
   }
+}
+
+.button--news:hover,
+.button--news:focus {
+  background-color: #5eaa2f;
+  outline: none;
+}
+
+.button--news:active {
+  color: rgba($light-base-color, 0.3);
 }

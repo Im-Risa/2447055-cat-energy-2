@@ -1,11 +1,15 @@
 .extra-product {
+  width: 320px;
+  margin: 0 auto;
   padding: 25px 20px 40px;
 
   @media (min-width: 768px) {
+    width: 768px;
     padding: 0 30px 70px;
   }
 
   @media (min-width: 1440px) {
+    width: 1440px;
     padding: 0 111px 96px;
     display: flex;
     flex-wrap: wrap;
@@ -74,22 +78,20 @@
 }
 
 .extra-product__card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 200px 80px;
   padding: 13px 0 19px;
   border-bottom: solid 1px #cdcdcd;
 
   @media (min-width: 768px) {
+    grid-template-columns: 317px 225px 90px;
     padding: 26px 38px 28px;
-    flex-flow: row wrap;
-    justify-content: space-between;
     border: solid 1px #cdcdcd;
     border-top: none;
   }
 
   @media (min-width: 1440px) {
-    display: grid;
-    grid-template-columns: 285px 285px 244px;
+    grid-template-columns: 326px 242px 82px 244px;
     align-items: center;
     padding: 17px 0;
     border: none;
@@ -106,28 +108,12 @@
   text-transform: uppercase;
   color: $secondary-text-color;
   margin-bottom: 13px;
+  grid-column: 1/3;
 
   @media (min-width: 768px) {
     width: 300px;
     font-size: 20px;
-  }
-
-  @media (min-width: 1440px) {
-    margin: 0;
-  }
-}
-
-.extra-product__card-char {
-  @include font($primary-font, 400, 14px, 1);
-  color: $primary-text-color;
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  margin-bottom: 15px;
-
-  @media (min-width: 768px) {
-    font-size: 16px;
-    line-height: 1.25;
+    grid-column: 1/2;
   }
 
   @media (min-width: 1440px) {
@@ -136,23 +122,56 @@
 }
 
 .extra-product__card-volume {
+  @include font($primary-font, 400, 14px, 1);
+  color: $primary-text-color;
+  margin-bottom: 15px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+  }
+
   @media (min-width: 1440px) {
-    width: 165px;
+    text-align: left;
+    margin: 0;
   }
 }
 
 .extra-product__card-price {
+  @include font($primary-font, 400, 14px, 1);
+  color: $primary-text-color;
   text-align: right;
-  width: 80px;
-  margin-left: 20px;
+  grid-column: 2/3;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.25;
+    grid-column: 3/4;
+  }
 
   @media (min-width: 1440px) {
-    width: 100px;
+    text-align: left;
   }
 }
 
-.extra-product__button:hover {
+.extra-product__button {
+  grid-column: -3/-1;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    grid-column: -4/-1;
+  }
+
+  @media (min-width: 1440px) {
+    grid-column: -2/-1;
+  }
+}
+
+.extra-product__button:hover,
+.extra-product__button:focus {
   background-color: #5eaa2f;
+  outline: none;
 }
 
 .extra-product__button:active {

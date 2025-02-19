@@ -75,8 +75,14 @@
   }
 }
 
-.main-nav__link:hover {
+.main-nav__link:hover,
+.main-nav__link:focus {
   opacity: 0.6;
+  outline: none;
+}
+
+.main-nav__link:active {
+  opacity: 0.3;
 }
 
 .main-nav__item--current {

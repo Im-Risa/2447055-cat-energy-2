@@ -65,6 +65,16 @@
   }
 }
 
+.card__link-img:hover,
+.card__link-img:focus {
+  opacity: 0.8;
+  outline: none;
+}
+
+.card__link-img:active {
+  opacity: 0.6;
+}
+
 .card__image {
   place-self: center center;
 
@@ -81,6 +91,16 @@
   @media (min-width: 1440px) {
     margin-bottom: 15px;
   }
+}
+
+.card__link-title:hover,
+.card__link-title:focus {
+  opacity: 0.8;
+  outline: none;
+}
+
+.card__link-title:active {
+  opacity: 0.6;
 }
 
 .card__title {
@@ -157,13 +177,17 @@
 }
 
 .card__button {
+  cursor: pointer;
+
   @media (max-width: 767px) {
     grid-area: button;
   }
 }
 
-.card__button:hover {
+.card__button:hover,
+.card__button:focus {
   background-color: #5eaa2f;
+  outline: none;
 }
 
 .card__button:active {

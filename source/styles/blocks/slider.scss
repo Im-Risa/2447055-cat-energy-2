@@ -13,11 +13,13 @@
   top: 0;
   left: 50%;
   z-index: 1;
+  cursor: pointer;
 }
 
 .slider__toggle:hover,
 .slider__toggle:focus {
   background-color: $bg-accent-color;
+  outline: none;
 }
 
 .slider__toggle:hover.slider__toggle::before,

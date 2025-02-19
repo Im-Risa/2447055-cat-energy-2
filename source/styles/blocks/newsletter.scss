@@ -1,14 +1,18 @@
 .newsletter {
+  width: 320px;
+  margin: 0 auto;
   padding: 0 20px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (min-width: 768px) {
+    width: 768px;
     padding: 0 70px 80px;
   }
 
   @media (min-width: 1440px) {
+    width: 1440px;
     padding: 0 110px 104px;
   }
 }
@@ -81,6 +85,7 @@
   text-transform: uppercase;
   color: $primary-text-color;
   margin-bottom: 16px;
+  border: solid 1px #cdcdcd;
 
   @media (min-width: 768px) {
     width: 367px;
@@ -91,4 +96,14 @@
   @media (min-width: 1440px) {
     width: 460px;
   }
+}
+
+.newsletter__field::placeholder {
+  color: $primary-text-color;
+}
+
+.newsletter__field:hover,
+.newsletter__field:focus {
+  border-color: $primary-text-color;
+  outline: none;
 }

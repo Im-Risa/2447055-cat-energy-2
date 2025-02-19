@@ -2,6 +2,7 @@
   width: 320px;
   background-color: $light-base-color;
   padding: 20px;
+  margin: 0 auto;
 
   @media (min-width: 768px) {
     width: 768px;
@@ -175,8 +176,14 @@
   }
 }
 
-.program__link:hover.program__link::after {
+.program__link:hover.program__link::after,
+.program__link:focus.program__link::after {
   transform: translateX(3px);
+}
+
+.program__link:focus {
+  opacity: 0.6;
+  outline: none;
 }
 
 .program__link:active {

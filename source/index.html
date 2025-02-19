@@ -46,14 +46,16 @@
   </header>
   <main class="main-index">
     <section class="hero">
-      <h1 class="hero__title title-reset">Функциональное<br>питание для котов</h1>
-      <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <picture>
-        <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/hero/hero-product-desktop@1x.png 1x, images/hero/hero-product-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/hero/hero-product-tablet@1x.png 1x, images/hero/hero-product-tablet@2x.png 2x">
-        <img class="hero__image-product" src="images/hero/hero-product-mobile@1x.png" srcset="images/hero/hero-product-mobile@2x.png 2x" width="280" height="270" alt="Изображение упаковки продукта">
-      </picture>
-      <a class="hero__link link-reset" href="#">Подобрать программу</a>
+      <div class="hero__wrapper">
+        <h1 class="hero__title title-reset">Функциональное<br>питание для котов</h1>
+        <p class="hero__slogan">Занялся собой? Займись котом!</p>
+        <picture>
+          <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/hero/hero-product-desktop@1x.png 1x, images/hero/hero-product-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/hero/hero-product-tablet@1x.png 1x, images/hero/hero-product-tablet@2x.png 2x">
+          <img class="hero__image-product" src="images/hero/hero-product-mobile@1x.png" srcset="images/hero/hero-product-mobile@2x.png 2x" width="280" height="270" alt="Изображение упаковки продукта">
+        </picture>
+        <a class="hero__link link-reset" href="#">Подобрать программу</a>
+      </div>
     </section>
     <section class="program">
       <h2 class="visually-hidden">Подберите подходящую программу для вашего кота</h2>
@@ -82,41 +84,43 @@
       </ul>
     </section>
     <section class="result">
-      <div class="result__info">
-        <h2 class="result__title title-reset">Живой пример</h2>
-        <p class="result__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <ul class="result__list list-reset">
-          <li class="result__item">
-            <span class="result__value">5 кг</span>
-            <span class="result__criteria">снижение веса</span>
-          </li>
-          <li class="result__item">
-            <span class="result__value">60 дней</span>
-            <span class="result__criteria">затрачено времени</span>
-          </li>
-        </ul>
-        <p class="result__costs costs">
-          <span class="costs__criteria">Затраты на питание:</span>
-          <span class="costs__value">15 000 Руб.</span>
-        </p>
-      </div>
-      <div class="result__slider slider">
-        <div class="slider__fat">
-          <picture>
-            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider/slider-cat-before-tablet@1x.png 1x, images/slider/slider-cat-before-tablet@2x.png 2x">
-            <img class="slider__image slider__image--fat-cat" src="images/slider/slider-cat-before-mobile@1x.png" srcset="images/slider/slider-cat-before-mobile@2x.png 2x" width="280" height="256" alt="Кот до приема Cat Energy">
-          </picture>
+      <div class="result__wrapper">
+        <div class="result__info">
+          <h2 class="result__title title-reset">Живой пример</h2>
+          <p class="result__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <ul class="result__list list-reset">
+            <li class="result__item">
+              <span class="result__value">5 кг</span>
+              <span class="result__criteria">снижение веса</span>
+            </li>
+            <li class="result__item">
+              <span class="result__value">60 дней</span>
+              <span class="result__criteria">затрачено времени</span>
+            </li>
+          </ul>
+          <p class="result__costs costs">
+            <span class="costs__criteria">Затраты на питание:</span>
+            <span class="costs__value">15 000 Руб.</span>
+          </p>
         </div>
-        <button class="slider__toggle" type="button">
-          <span class="visually-hidden">Ползунок</span>
-        </button>
-        <div class="slider__slim">
-          <picture>
-            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider/slider-cat-after-tablet@1x.png 1x, images/slider/slider-cat-after-tablet@2x.png 2x">
-            <img class="slider__image slider__image--slim-cat" src="images/slider/slider-cat-after-mobile@1x.png" srcset="images/slider/slider-cat-after-mobile@2x.png 2x" width="280" height="256" alt="Кот после приема Cat Energy">
-          </picture>
+        <div class="result__slider slider">
+          <div class="slider__fat">
+            <picture>
+              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider/slider-cat-before-tablet@1x.png 1x, images/slider/slider-cat-before-tablet@2x.png 2x">
+              <img class="slider__image slider__image--fat-cat" src="images/slider/slider-cat-before-mobile@1x.png" srcset="images/slider/slider-cat-before-mobile@2x.png 2x" width="280" height="256" alt="Кот до приема Cat Energy">
+            </picture>
+          </div>
+          <button class="slider__toggle" type="button">
+            <span class="visually-hidden">Ползунок</span>
+          </button>
+          <div class="slider__slim">
+            <picture>
+              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider/slider-cat-after-tablet@1x.png 1x, images/slider/slider-cat-after-tablet@2x.png 2x">
+              <img class="slider__image slider__image--slim-cat" src="images/slider/slider-cat-after-mobile@1x.png" srcset="images/slider/slider-cat-after-mobile@2x.png 2x" width="280" height="256" alt="Кот после приема Cat Energy">
+            </picture>
+          </div>
         </div>
       </div>
     </section>
@@ -135,29 +139,31 @@
     </section>
   </main>
   <footer class="main-footer">
-    <a class="main-footer__logo logo link-reset" href="index.html">
-      <img class="logo__text" src="images/vector/footer-logo-text.svg" width="128" height="24" alt="Логотип Cat Energy">
-    </a>
-    <ul class="main-footer__list social list-reset">
-      <li class="social__item">
-        <a class="social__link social__link--vkontakte link-reset" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Vkontakte</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--youtube link-reset" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Youtube</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--telegram link-reset" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Telegram</span>
-        </a>
-      </li>
-    </ul>
-    <a class="main-footer__developer developer link-reset" href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="developer__name">HTML Academy</span>
-    </a>
+    <div class="main-footer__wrapper">
+      <a class="main-footer__logo logo link-reset" href="index.html">
+        <img class="logo__text" src="images/vector/footer-logo-text.svg" width="128" height="24" alt="Логотип Cat Energy">
+      </a>
+      <ul class="main-footer__list social list-reset">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte link-reset" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Vkontakte</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube link-reset" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram link-reset" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+      </ul>
+      <a class="main-footer__developer developer link-reset" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="developer__name">HTML Academy</span>
+      </a>
+    </div>
   </footer>
 </body>
 

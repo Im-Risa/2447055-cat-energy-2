@@ -13,6 +13,10 @@
   background-color: $bg-accent-color;
 }
 
+.developer:focus {
+  outline: none;
+}
+
 .developer:active {
   opacity: 0.3;
 }

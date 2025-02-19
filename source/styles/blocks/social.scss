@@ -32,6 +32,7 @@
 .social__link:hover,
 .social__link:focus {
   background-color: $bg-accent-color;
+  outline: none;
 }
 
 .social__link:active {

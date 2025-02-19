@@ -4,13 +4,16 @@
 }
 
 .contacts__location {
+  width: 320px;
   padding: 26px 20px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 140px);
   justify-content: space-between;
   background-color: $light-base-color;
 
   @media (min-width: 768px) {
+    width: 768px;
     grid-template-columns: repeat(2, 170px);
     padding: 60px 70px;
   }
@@ -64,4 +67,9 @@
     display: block;
     margin-top: 15px;
   }
+}
+
+.contacts__map {
+  width: 100%;
+  object-fit: cover;
 }
