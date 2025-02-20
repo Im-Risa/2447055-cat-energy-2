@@ -2,7 +2,6 @@
   width: 320px;
   padding: 13px 20px 15px;
   margin: 0 auto;
-  background-color: $light-base-color;
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -26,7 +25,6 @@
   @media (min-width: 1440px) {
     position: absolute;
     width: 1440px;
-    background-color: transparent;
     color: $light-base-color;
   }
 }

@@ -16,11 +16,11 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: 768px) {
     width: 768px;
     padding: 45px 30px 101px;
-    border-top: solid 1px #e6e6e6;
   }
 
   @media (min-width: 1440px) {
@@ -28,7 +28,16 @@
     padding: 0 110px 75px;
     flex-direction: row;
     justify-content: space-between;
-    border: none;
+  }
+}
+
+.result__wrapper::before {
+  @media (min-width: 768px) and (max-width: 1439px) {
+    @include pseudo(1439px, 1px);
+    background-color: #e6e6e6;
+    position: absolute;
+    left: -44%;
+    top: 0;
   }
 }
 

@@ -1,11 +1,11 @@
 .card {
   padding: 20px 20px 25px;
   display: grid;
+  position: relative;
 
   @media (max-width: 767px) {
     grid-template-columns: repeat(2, 140px);
     grid-template-areas: "img title" "img desc" "button button";
-    border-bottom: solid 1px #ebebeb;
   }
 
   @media (min-width: 768px) {
@@ -19,6 +19,14 @@
   @media (min-width: 1440px) {
     padding: 0 38px 40px;
     grid-template-columns: 169px;
+  }
+}
+
+.card::before {
+  @media (max-width: 767px) {
+    @include pseudo(1439px, 1px);
+    background-color: #ebebeb;
+    position: absolute;
   }
 }
 
@@ -65,17 +73,7 @@
   }
 }
 
-.card__link-img:hover,
-.card__link-img:focus {
-  opacity: 0.8;
-  outline: none;
-}
-
-.card__link-img:active {
-  opacity: 0.6;
-}
-
-.card__image {
+.card__link-img {
   place-self: center center;
 
   @media (max-width: 767px) {
@@ -93,6 +91,16 @@
   }
 }
 
+.card__link-img:hover,
+.card__link-img:focus {
+  opacity: 0.8;
+  outline: none;
+}
+
+.card__link-img:active {
+  opacity: 0.6;
+}
+
 .card__link-title:hover,
 .card__link-title:focus {
   opacity: 0.8;
@@ -103,16 +111,18 @@
   opacity: 0.6;
 }
 
+.card__link-title {
+  @media (max-width: 767px) {
+    grid-area: title;
+  }
+}
+
 .card__title {
   @include font($secondary-font, 400, 16px, 1.25);
   text-transform: uppercase;
   color: $secondary-text-color;
   width: 80px;
   margin-bottom: 14px;
-
-  @media (max-width: 767px) {
-    grid-area: title;
-  }
 
   @media (min-width: 768px) {
     font-size: 20px;

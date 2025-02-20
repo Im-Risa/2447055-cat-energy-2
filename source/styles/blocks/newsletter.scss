@@ -82,7 +82,6 @@
   @include font($secondary-font, 400, 20px, 1);
   width: 280px;
   padding: 10px;
-  text-transform: uppercase;
   color: $primary-text-color;
   margin-bottom: 16px;
   border: solid 1px #cdcdcd;
@@ -100,10 +99,22 @@
 
 .newsletter__field::placeholder {
   color: $primary-text-color;
+  text-transform: uppercase;
+}
+
+.newsletter__field:user-invalid {
+  border-color: #ff8282;
 }
 
 .newsletter__field:hover,
 .newsletter__field:focus {
   border-color: $primary-text-color;
   outline: none;
+}
+
+.newsletter__field:disabled {
+  border-color: #cdcdcd;
+  background-color: #f2f2f2;
+  opacity: 0.4;
+  pointer-events: none;
 }
