@@ -23,11 +23,7 @@
   width: 320px;
   padding: 27px 20px 41px;
   margin: 0 auto;
-
-  @media (max-width: 767px) {
-    border-top: solid 1px #d9d9d9;
-    border-bottom: solid 1px #d9d9d9;
-  }
+  position: relative;
 
   @media (min-width: 768px) {
     width: 768px;
@@ -38,5 +34,16 @@
   @media (min-width: 1440px) {
     width: 1440px;
     padding: 60px 110px 84px;
+  }
+}
+
+.catalog__title::before {
+  @media (max-width: 767px) {
+    @include pseudo(767px, 1px);
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
   }
 }

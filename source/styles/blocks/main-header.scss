@@ -24,7 +24,8 @@
 .main-header--index {
   @media (min-width: 1440px) {
     position: absolute;
-    width: 1440px;
+    left: 50%;
+    transform: translateX(-50%);
     color: $light-base-color;
   }
 }

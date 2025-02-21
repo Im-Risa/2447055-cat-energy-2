@@ -44,3 +44,8 @@
 .button--news:active {
   color: rgba($light-base-color, 0.3);
 }
+
+.button--news:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}

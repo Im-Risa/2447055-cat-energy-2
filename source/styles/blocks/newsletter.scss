@@ -102,14 +102,14 @@
   text-transform: uppercase;
 }
 
-.newsletter__field:user-invalid {
-  border-color: #ff8282;
-}
-
 .newsletter__field:hover,
 .newsletter__field:focus {
   border-color: $primary-text-color;
   outline: none;
+}
+
+.newsletter__field:user-invalid {
+  border-color: #ff8282;
 }
 
 .newsletter__field:disabled {

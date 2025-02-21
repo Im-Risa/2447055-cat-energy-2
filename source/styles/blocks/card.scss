@@ -24,15 +24,16 @@
 
 .card::before {
   @media (max-width: 767px) {
-    @include pseudo(1439px, 1px);
+    @include pseudo(767px, 1px);
     background-color: #ebebeb;
     position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
   }
 }
 
 .card--more {
-  background-color: $light-base-color;
-  background-image: none;
   width: 320px;
   display: flex;
   flex-direction: column;
@@ -43,6 +44,8 @@
   padding-top: 78px;
 
   @media (min-width: 768px) {
+    background-image: none;
+    background-color: $light-base-color;
     width: 324px;
     height: 438px;
     padding-top: 160px;
@@ -58,7 +61,7 @@
   }
 }
 
-.card--more::before {
+.card--more::after {
   @include pseudo(30px, 30px);
   background-color: #d3d3d3;
   mask-image: url("../../icons/stack.svg#plus-mobile");
