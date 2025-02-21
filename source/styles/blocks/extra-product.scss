@@ -19,13 +19,15 @@
 }
 
 .extra-product::before {
-  @media (max-width: 767px) {
-    @include pseudo(767px, 1px);
-    background-color: #ebebeb;
-    position: absolute;
-    top: 0;
-    right: 50%;
-    transform: translateX(50%);
+  @include pseudo(100vw, 2px);
+  background-color: $bg-accent-color;
+  position: absolute;
+  top: 35px;
+  right: 50%;
+  transform: translateX(50%);
+
+  @media (min-width: 768px) {
+    top: 19px;
   }
 }
 
@@ -33,10 +35,11 @@
   @include font($secondary-font, 400, 24px, 1);
   color: $dark-base-color;
   margin-bottom: 36px;
-  position: relative;
   background-color: $light-base-color;
-  padding: 0 20px 0 30px;
-  left: -20px;
+  position: relative;
+  width: fit-content;
+  padding: 0 40px;
+  transform: translateX(-40px);
 
   @media (min-width: 768px) {
     font-size: 32px;
@@ -48,16 +51,6 @@
     font-size: 40px;
     margin-left: 0;
   }
-}
-
-.extra-product__title::after {
-  @include pseudo(1000%, 2px);
-  background-color: $bg-accent-color;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
 }
 
 .extra-product__list {

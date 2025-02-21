@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: 768px) {
     width: 768px;
@@ -14,6 +15,17 @@
     width: 1440px;
     column-gap: 80px;
     padding: 0 110px;
+  }
+}
+
+.catalog::after {
+  @media (max-width: 767px) {
+    @include pseudo(100vw, 1px);
+    background-color: #ebebeb;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
   }
 }
 
