@@ -1,5 +1,10 @@
 .slider {
   position: relative;
+
+  @media (min-width: 1440px) {
+    align-self: center;
+    margin-bottom: 20px;
+  }
 }
 
 .slider__toggle {

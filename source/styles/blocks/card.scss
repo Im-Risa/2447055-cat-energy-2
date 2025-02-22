@@ -47,7 +47,7 @@
     background-image: none;
     background-color: $light-base-color;
     width: 324px;
-    height: 438px;
+    min-height: 438px;
     padding-top: 160px;
     align-self: flex-end;
     outline: solid 1px $bg-primary-color;
@@ -57,7 +57,7 @@
   @media (min-width: 1440px) {
     padding-top: 150px;
     width: 245px;
-    height: 425px;
+    min-height: 425px;
   }
 }
 

@@ -31,13 +31,18 @@
 .main-nav__list {
   width: 767px;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: center;
 
   @media (min-width: 768px) {
     width: auto;
+    max-width: 500px;
     flex-direction: row;
     justify-content: flex-end;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 600px;
   }
 }
 

@@ -1,6 +1,6 @@
 .promo {
   width: 280px;
-  height: 290px;
+  min-height: 290px;
   color: $light-base-color;
   background-image:
     image-set(
@@ -9,6 +9,7 @@
       url("../../images/promo/promo-cat-mobile@1x.png") type("image/png") 1x,
       url("../../images/promo/promo-cat-mobile@2x.png") type("image/png") 2x
     );
+  background-repeat: no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -24,9 +25,10 @@
         url("../../images/promo/promo-cat-tablet@2x.png") type("image/png") 2x
       );
     width: 707px;
-    height: 200px;
+    min-height: 200px;
     flex-direction: row;
     justify-content: space-between;
+    padding: 10px 0;
   }
 
   @media (min-width: 1440px) {
@@ -38,9 +40,10 @@
         url("../../images/promo/promo-cat-desktop@2x.png") type("image/png") 2x
       );
     width: 245px;
-    height: 288px;
+    min-height: 288px;
     flex-direction: column;
     align-items: center;
+    padding: 0;
   }
 }
 
@@ -57,19 +60,17 @@
 }
 
 .promo::after {
-  @include pseudo(280px, 290px);
+  @include pseudo(280px, 100%);
   background-color: rgba($bg-accent-color, 0.85);
   position: absolute;
   z-index: -1;
 
   @media (min-width: 768px) {
     width: 707px;
-    height: 200px;
   }
 
   @media (min-width: 1440px) {
     width: 245px;
-    height: 288px;
   }
 }
 

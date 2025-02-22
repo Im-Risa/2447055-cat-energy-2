@@ -38,9 +38,12 @@
   background-color: $bg-primary-color;
   position: relative;
   padding: 30px 20px 18px;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
     padding: 77px 52px 53px;
+    padding-right: 316px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: 1440px) {
@@ -48,14 +51,8 @@
   }
 }
 
-.program__item:not(:last-child) {
-  margin-bottom: 20px;
-
-  @media (min-width: 768px) and (max-width: 1439px) {
-    margin-bottom: 30px;
-  }
-
-  @media (min-width: 1440px) {
+.program__item:last-child {
+  @media (max-width: 1439px) {
     margin-bottom: 0;
   }
 }
@@ -159,12 +156,10 @@
     color: $dark-base-color;
     font-size: 16px;
     line-height: 1.5;
-    width: 340px;
     margin-bottom: 48px;
   }
 
   @media (min-width: 1440px) {
-    width: 451px;
     margin-bottom: 30px;
   }
 }

@@ -1,11 +1,17 @@
 .social {
   padding: 20px 74px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 320px;
 
   @media (max-width: 767px) {
     border-top: solid 1px #d9d9d9;
     border-bottom: solid 1px #d9d9d9;
+  }
+
+  @media (min-width: 1440px) {
+    width: 500px;
   }
 }
 
