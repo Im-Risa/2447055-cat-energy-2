@@ -1,3 +1,14 @@
+@keyframes arrow {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(3px);
+  }
+}
+
 .program {
   width: 320px;
   padding: 20px;
@@ -177,7 +188,7 @@
 
 .program__link:hover.program__link::after,
 .program__link:focus.program__link::after {
-  transform: translateX(3px);
+  animation: arrow 0.6s infinite;
 }
 
 .program__link:focus {
