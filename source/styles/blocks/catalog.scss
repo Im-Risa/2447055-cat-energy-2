@@ -31,6 +31,7 @@
 
 .catalog__title {
   @include font($secondary-font, 400, 36px, 1);
+  @include font($secondary-font, 400, 36px, 1);
   color: $dark-base-color;
   width: 320px;
   padding: 27px 20px 41px;

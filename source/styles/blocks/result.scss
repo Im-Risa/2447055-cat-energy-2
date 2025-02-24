@@ -72,6 +72,7 @@
 
 .result__text {
   @include font($primary-font, 400, 14px, 1.29);
+  @include font($primary-font, 400, 14px, 1.29);
   color: $primary-text-color;
   margin-bottom: 19px;
 
@@ -128,6 +129,7 @@
 
 .result__criteria {
   @include font($primary-font, 400, 12px, 1);
+  @include font($primary-font, 400, 12px, 1);
   color: $primary-text-color;
   width: 88px;
   position: absolute;
@@ -151,6 +153,7 @@
 }
 
 .result__costs {
+  @include font($secondary-font, 400, 14px, 1.43);
   @include font($secondary-font, 400, 14px, 1.43);
   text-transform: uppercase;
   text-align: center;

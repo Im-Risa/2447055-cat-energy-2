@@ -128,6 +128,7 @@
 
 .program__title {
   @include font($secondary-font, 400, 24px, 1.54);
+  @include font($secondary-font, 400, 24px, 1.54);
   text-transform: uppercase;
   margin-bottom: 29px;
   display: block;
@@ -148,6 +149,7 @@
 
 .program__description {
   @include font($primary-font, 400, 14px, 1.29);
+  @include font($primary-font, 400, 14px, 1.29);
   color: $primary-text-color;
   margin-bottom: 23px;
 
@@ -164,6 +166,7 @@
 }
 
 .program__link {
+  @include font($secondary-font, 400, 16px, 1);
   @include font($secondary-font, 400, 16px, 1);
   text-transform: uppercase;
   color: $dark-base-color;
