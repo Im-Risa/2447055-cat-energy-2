@@ -27,7 +27,11 @@
   transform: translateX(50%);
 
   @media (min-width: 768px) {
-    top: 19px;
+    top: 13px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 18px;
   }
 }
 
@@ -38,45 +42,49 @@
   position: relative;
   padding: 0 40px;
   transform: translateX(-40px);
+  margin-bottom: 16px;
 
   @media (min-width: 768px) {
     font-size: 32px;
-    margin-bottom: 55px;
+    margin-bottom: 66px;
   }
 
   @media (min-width: 1440px) {
     font-size: 40px;
+    margin-bottom: 73px;
   }
 }
 
 .newsletter__text {
   @include font($secondary-font, 400, 16px, 1.5);
   text-align: center;
+  margin-bottom: 24px;
 
   @media (min-width: 768px) {
     font-size: 24px;
     line-height: 1.33;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 23px;
   }
 }
 
 .newsletter__field {
   @include font($secondary-font, 400, 20px, 1);
   width: 280px;
-  padding: 10px;
+  padding: 12px;
   color: $primary-text-color;
   margin-bottom: 16px;
   border: solid 1px #cdcdcd;
 
   @media (min-width: 768px) {
-    width: 367px;
-    padding: 8px;
+    width: 374px;
+    padding: 12px;
+    margin-left: -2px;
     margin-bottom: 0;
   }
 
   @media (min-width: 1440px) {
-    width: 460px;
+    width: 496px;
   }
 }
 

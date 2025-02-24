@@ -2,11 +2,11 @@
   background-color: $bg-secondary-color;
 
   @media (min-width: 768px) {
-    background-image: linear-gradient(180deg, $light-base-color 58%, $bg-secondary-color 58%);
+    background-image: linear-gradient(180deg, $light-base-color 619px, $bg-secondary-color 619px);
   }
 
   @media (min-width: 1440px) {
-    background-image: linear-gradient(180deg, $light-base-color 23%, $bg-secondary-color 23%);
+    background-image: linear-gradient(180deg, $light-base-color 136px, $bg-secondary-color 136px);
   }
 }
 
@@ -25,7 +25,7 @@
 
   @media (min-width: 1440px) {
     width: 1440px;
-    padding: 0 110px 75px;
+    padding: 0 110px 59px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -47,6 +47,7 @@
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 4px;
   }
 
   @media (min-width: 1440px) {
@@ -61,18 +62,18 @@
   @media (min-width: 768px) {
     font-size: 60px;
     line-height: 1;
-    margin-bottom: 60px;
+    margin-bottom: 44px;
   }
 
   @media (min-width: 1440px) {
-    margin-bottom: 146px;
+    margin-bottom: 130px;
   }
 }
 
 .result__text {
   @include font($primary-font, 400, 14px, 1.29);
   color: $primary-text-color;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @media (min-width: 768px) {
     font-size: 16px;
@@ -97,20 +98,21 @@
   }
 
   @media (min-width: 1440px) {
-    margin-bottom: 55px;
+    margin-bottom: 61px;
   }
 }
 
 .result__item {
   width: 124px;
   position: relative;
-  padding: 14.5px 10px;
+  padding: 13px 10px 14px;
   text-align: center;
   border: solid 1px #cdcdcd;
   border-radius: 5px;
 
   @media (min-width: 768px) {
     width: 162px;
+    padding: 16px 10px 17px;
   }
 }
 
@@ -127,18 +129,20 @@
 .result__criteria {
   @include font($primary-font, 400, 12px, 1);
   color: $primary-text-color;
-  width: 80px;
+  width: 88px;
   position: absolute;
+  display: block;
   background-color: $bg-secondary-color;
   padding: 0 10px;
   top: 86%;
-  left: 18%;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media (min-width: 768px) {
-    width: 150px;
+    width: 145px;
     font-size: 14px;
     background-color: $light-base-color;
-    left: 5px;
+    padding: 3px 10px;
   }
 
   @media (min-width: 1440px) {
@@ -157,7 +161,7 @@
     font-size: 20px;
     line-height: 1;
     text-align: right;
-    margin-top: 10px;
+    margin-top: 11px;
     margin-left: auto;
   }
 

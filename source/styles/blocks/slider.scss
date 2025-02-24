@@ -16,9 +16,13 @@
   border-radius: 2px;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 138px;
   z-index: 1;
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    left: 278px;
+  }
 }
 
 .slider__toggle:hover,
@@ -47,11 +51,11 @@
   border-radius: 50%;
   background-color: $light-base-color;
   position: absolute;
-  top: 110px;
+  top: 108px;
   left: -18px;
 
   @media (min-width: 768px) {
-    top: 240px;
+    top: 236px;
   }
 }
 
@@ -60,11 +64,11 @@
   background-color: #666666;
   mask-image: url("../../icons/stack.svg#toggle");
   position: absolute;
-  top: 121px;
+  top: 119px;
   left: -10px;
 
   @media (min-width: 768px) {
-    top: 250px;
+    top: 247px;
   }
 }
 
@@ -76,10 +80,10 @@
 .slider__slim {
   overflow-x: hidden;
   width: 50%;
-  transform: translate(102.8%, -100%);
+  transform: translate(100%, -100%);
 
   @media (min-width: 768px) {
-    transform: translate(101.4%, -100%);
+    transform: translate(100%, -100%);
   }
 }
 

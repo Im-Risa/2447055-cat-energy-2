@@ -1,6 +1,5 @@
 .contacts {
   position: relative;
-  margin-bottom: -6px;
 }
 
 .contacts--second {
@@ -34,21 +33,13 @@
 
   @media (min-width: 1440px) {
     width: 565px;
-    padding: 60px 80px;
+    padding: 60px 64px 60px 80px;
     position: absolute;
-    top: 95px;
+    top: 98px;
     left: calc(50% - 610px);
     background-color: $light-base-color;
   }
 }
-
-// .contacts__location--second {
-//   background-color: $bg-primary-color;
-
-//   @media (min-width: 1440px) {
-//     background-color: $light-base-color;
-//   }
-// }
 
 .contacts__title {
   @include font($secondary-font, 400, 16px, 1.25);
@@ -80,11 +71,12 @@
 .contacts__city {
   @media (min-width: 768px) {
     display: block;
-    margin-top: 15px;
+    margin-top: 20px;
   }
 }
 
 .contacts__map {
   width: 100%;
   object-fit: cover;
+  margin-bottom: -6px;
 }

@@ -1,15 +1,22 @@
 .developer {
+  @include font($primary-font, 400, 16px, 1.25);
+  color: $primary-text-color;
   width: 280px;
-  margin: 10px 0 0;
+  padding: 26px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 30px;
 
   @media (min-width: 768px) {
-    width: 168px;
+    width: 161px;
     margin: 0;
   }
 }
 
-.developer:hover .developer__name::after,
-.developer:focus .developer__name::after {
+.developer:hover.developer::after,
+.developer:focus.developer::after {
   background-color: $bg-accent-color;
 }
 
@@ -21,16 +28,14 @@
   opacity: 0.3;
 }
 
-.developer__name {
-  @include font($primary-font, 400, 16px, 1.25);
-  color: $primary-text-color;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.developer__name::after {
+.developer::after {
   @include pseudo(27px, 34px);
+  position: absolute;
+  left: calc(100% - 27px);
   background-color: #666666;
   mask-image: url("../../icons/stack.svg#logo-htmlacademy");
+
+  @media (min-width: 768px) {
+    left: calc(100% - 25px);
+  }
 }
